@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paisagens Naturais do Canadá</title>
+    <style>
+        dialog::backdrop{
+            background-color: rgba(255, 151, 151, 0.493);
+        }
+
+        dialog{
+            border: none;
+            border-radius: 10px;
+            box-shadow: rgba(71, 0, 0, 0.623);
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,27 +32,69 @@
     <main>
         <section>
             <ul class="limitado">
+                <h2>História</h2>
+                <button id="button">Igredientes</button>
+                <dialog id="modal">
+                    <h2>História do Canadá</h2>
+                    <p>A história do Canadá começa com os povos indígenas que habitaram o território há milhares de anos, incluindo as Primeiras Nações, os Métis e os Inuit, que desenvolveram culturas ricas e sustentáveis ​​em harmonia com a natureza. A colonização europeia teve início no século XVI, com exploradores franceses como Jacques Cartier e Samuel de Champlain, que fundaram Quebec em 1608, estabelecendo as bases da presença francesa. No entanto, após a Guerra dos Sete Anos (1756–1763), o território passou ao controle britânico.</p>
+                    <p>O Canadá tornou-se uma nação independente em 1º de julho de 1867, com a criação da Confederação Canadense, inicialmente formada pelas províncias de Ontário, Quebec, Nova Escócia e Novo Brunswick. Com o tempo, outras províncias e territórios foram integrados. A soberania plena ocorreu em 1982, com a adoção da Lei da Constituição.</p>
+                    <p>Hoje, o Canadá é reconhecido como um país multicultural, com duas línguas oficiais (inglês e francês) e um forte compromisso com a diversidade, os direitos humanos e a preservação de suas raízes indígenas e naturais.</p>
+                    <button id="button_close">fechar</button>
+                </dialog>
+
+                <script>
+                    const button = document.querySelector("#button")
+                    const modal = document.querySelector("#modal")
+                    const button_close = document.querySelector("#button_close")
+                
+                    button.onclick = function() {
+                        modal.showModal ()
+                    }
+
+                    button_close.onclick = function () {
+                        modal.close()
+                    }
+                </script>
+
             <h2>Comidas Típicas</h2>
+
             <li><h3>Poutine</h3></li> 
             <img src="https://img.taste.com.au/GJej_qrp/taste/2016/11/poutine-104101-1.jpeg">  
+            <p class="espaço">AAaaaaaaaaa</p>
             <p>Poutine é um prato clássico do Quebec que conquistou todo o Canadá. Sua base é simples: batatas fritas cobertas com queijo coalho e molho de carne.</p>
-            <p> </p>
+            <p class="espaço">AAaaaaaaaaa</p>
+
             <li><h3>Tourtière</h3></li>
             <img src="https://www.chicken.ca/wp-content/uploads/2020/09/Quebec-Chicken-Tourtiere-with-Chicken-2-ways-20.jpg">
+            <p class="espaço">AAaaaaaaaaa</p>
             <p>Torta de carne tradicionalmente associada ao Natal e Réveillon na província de Quebec, a tortière é feita com uma massa crocante e recheio de carne moída (geralmente de porco, vitela ou uma mistura), temperada com especiarias como canela e cravo.            </p>
+            <p class="espaço">AAaaaaaaaaa</p>
+
             <li><h3>Maple syrup</h3></li>
             <img src="https://puroeleve.com.br/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-08-at-14.38.52.jpeg">
+            <p class="espaço">AAaaaaaaaaa</p>
             <p>O maple syrup, ou xarope de bordo, é um dos produtos mais emblemáticos do Canadá. Extraído da seiva das árvores de bordo, é utilizado em uma infinidade de receitas, desde panquecas e waffles até carnes e vegetais assados</p>
+            <p class="espaço">AAaaaaaaaaa</p>
+
             <li><h3>Bloody Caesar</h3></li>
             <img src="https://maplefromcanada.ca/uploads/2023/07/Bloody-Caesar-1200x628-1.jpg">
+            <p class="espaço">AAaaaaaaaaa</p>
             <p>Coquetel canadense que se assemelha ao Bloody Mary, o Bloody Caesar possui um toque especial: o suco de Clamato (uma mistura de suco de tomate e caldo de amêijoa).</p>
+            <p class="espaço">AAaaaaaaaaa</p>
+
             <li><h3>Oka cheese</h3></li>
             <img src="https://cheeselover.ca/wp-content/uploads/2020/07/lifestyle_oka_classique_0.jpg">
+            <p class="espaço">AAaaaaaaaaa</p>
             <p>Oka cheese é um queijo semi-firme com uma textura cremosa e um sabor suave e levemente nozes. Originário da cidade de Oka, em Quebec, este queijo tem suas raízes em uma receita criada por monges trapistas</p>
+            <p class="espaço">AAaaaaaaaaa</p>
+
             <li><h3>Montreal bagels</h3></li>
             <img src="https://loveincorporated.blob.core.windows.net/contentimages/main/6b68e32f-b4ce-4d4f-8570-6751995a065a-montreal-bagels.jpg">
+            <p class="espaço">AAaaaaaaaaa</p>
             <p>Os famosos bagels de Montreal são conhecidos por serem menores, mais densos e mais doces do que os bagels de Nova York</p>
             <p>Cozidos em forno a lenha após serem fervidos em água com mel, esses bagels possuem uma crosta fina e crocante e um interior mastigável. Sabores clássicos incluem gergelim e papoula, e são frequentemente apreciados com cream cheese ou defumados.</p>
+            <p class="espaço">AAaaaaaaaaa</p>
+            <p class="espaço">AAaaaaaaaaa</p>
         </section>
     </main>
     <footer>
