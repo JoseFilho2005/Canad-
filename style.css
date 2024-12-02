@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -26,12 +25,18 @@ header {
   margin: 20px;
 }
 
+
 .limitado{
     width: 1500px; 
     text-align: justify; 
     padding: 10px; 
     margin: 20px auto; 
+}
 
+
+
+.espaço{
+    color: #ffffff;
 }
 
 h2{
@@ -41,7 +46,7 @@ h2{
 }
 
 p{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -59,11 +64,80 @@ header img {
     margin: 0 auto;
 }
 
+#segundo {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  #terceiro {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  #quarto {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  #quinto {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  #primeiro {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  #prime{
+    width: 1500px; 
+    text-align: justify; 
+    padding: 10px; 
+    margin: 20px auto;
+  }
+
+  #segun{
+    width: 1500px; 
+    text-align: justify; 
+    padding: 10px; 
+    margin: 20px auto;
+  }
+
+  #ter{
+    width: 1500px; 
+    text-align: justify; 
+    padding: 10px; 
+    margin: 20px auto;
+  }
+
+  #qua{
+    width: 1500px; 
+    text-align: justify; 
+    padding: 10px; 
+    margin: 20px auto;
+  }
+
+  #quin{
+    width: 1500px; 
+    text-align: justify; 
+    padding: 10px; 
+    margin: 20px auto;
+  }
+
 nav ul {
     list-style: none;
-    padding: 10px;
+    padding: 0px;
     background-color: #ff3f3f;
     text-align: center;
+}
+
+ul li{
+    font-size: 30px;
 }
 
 nav ul li {
@@ -75,6 +149,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 main {
